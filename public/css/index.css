@@ -1,0 +1,44 @@
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body, html {
+	margin: 0; padding: 0;
+	background-color: #1D4F73;
+}
+body {
+	padding: 0 10px;
+}
+
+.container {
+	max-width: 960px;
+	width: 100%;
+	margin: 10px auto 0 auto;
+	text-align: center;
+	background-color: #f9f9f9;
+	box-shadow: 0 0 10px #111;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+img {
+	max-width: 420px;
+	width: 100%;
+}
+
+#cat_button {
+	display: inline-block;
+	background-color: hotpink;
+	padding: 5px 30px;
+	outline: none;
+	font-size: 17px;
+	border: 1px solid pink;
+	border-radius: 4px;
+	border-bottom: 4px solid #DB2A83;
+}
+
+#cat_button:hover, #cat_button:focus, #cat_button:active {
+	background-color: #DB2A83;
+	border-bottom-color: hotpink;
+}
