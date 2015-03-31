@@ -1,20 +1,25 @@
+<!-- This tells the browser we want to use HTML5 -->
 <!DOCTYPE html>
 <html>
-<header>
-<title>Cat App</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+	<head>
+		<!-- This is the title :P -->
+		<title>Cat App</title>
+		<!-- Make shit respond to device width -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Load in our styles -->
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<!-- Load jQuery before anything else so we can use it in index.js -->
+		<script src="js/jquery.min.js"></script>
+		<!-- Load our script in the DOM -->
+		<script src="js/index.js"></script>
+	</head>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/index.js"></script>
-</header>
-
-<body>
-<div class="container">
-	<h1>Click for cats</h1>
-	<img id="image" src="http://wallofkittens.com/images/dViUpyOl.jpg" alt="cat">
-	<br>
-	<button id="cat_button">New cat</button>
-</div>
-</body>
+	<body>
+		<div class="container">
+			<h1>Click for cats</h1>
+			<img id="image" src="http://wallofkittens.com/images/dViUpyOl.jpg" alt="cat">
+			<br>
+			<button id="cat_button">New cat</button>
+		</div>
+	</body>
 </html>
