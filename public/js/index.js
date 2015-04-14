@@ -2,12 +2,12 @@
 // This gets a new image
 function getImage(){
 	// Goes to the route /cat and passes the data on in the function call ()
-	$.get('/cat', function( data ){
+	$.get('/cat', function( body ){
 		// Here we call our own function with the url
 		// The url we get from data which is body on the server side
 		// We load that in as a jQuery nodes and use .find to search for the <url> element
 		// Then we say we want the text from the element and give it to renderAndReplaceImage
-		renderAndReplaceImage( $( data ).find("url").text() )
+		renderAndReplaceImage( $( body ).find("url").text() )
 	})
 }
 // This replaces an image src attribute
@@ -15,6 +15,7 @@ function renderAndReplaceImage( image ){
 	// This instance of `image` is what we get from getImage
 	// We find the element with ID `image` aka `#image`
 	// And replace the attribute `src` with the image url 
+	console.log( image )
 	$('#image').attr('src', image )
 }
 
